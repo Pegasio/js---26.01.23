@@ -70,7 +70,7 @@ function selectData() {
 									 <td>${sno}</td>
 									 <td>${arr[k]}</td>
 									 <td>
-									 		<a href="javascript:void(0)" onclick="editData(${k})">Edit</a>&nbsp;
+									 	<a href="javascript:void(0)" onclick="editData(${k})">Edit</a>&nbsp;
 									   	<a href="javascript:void(0)" onclick="deleteData(${k})">Delete</a>
 									 </td>
 							   </tr>`;
