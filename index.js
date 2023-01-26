@@ -1,6 +1,5 @@
 // задаем базовое значение айди
 let id = "no";
-//localStorage.clear();
 selectData();
 
 function manageData() {
@@ -14,12 +13,10 @@ function manageData() {
 	}
 	// Если инпут заполнен то
 	else {
-		// Выводим данные из id
-		console.log(id);
 		// Если id не поменял своё значение
 		if (id == 'no') {
 			// Инициализируем переменную, в которую помещаем функцию получения данных
-			let arr = getCrudData();	
+			let arr = getCrudData();
 
 			// Если после попытки получения данных оказалось, что данных нету.
 			if (arr == null) {
@@ -98,7 +95,7 @@ function deleteData(rid) {
 	selectData();
 }
 
-
+// // вывод
 function getCrudData() {
 	if (document.getElementById('crud')) {
 		let arr = JSON.parse(localStorage.getItem('crud'));
@@ -114,9 +111,9 @@ function getCrudData() {
 		let arr = JSON.parse(localStorage.getItem('crud3'));
 		return arr;
 	}
-
 }
 
+// // запись
 function setCrudData(arr) {
 	if (document.getElementById('crud')) {
 		localStorage.setItem('crud', JSON.stringify(arr));
