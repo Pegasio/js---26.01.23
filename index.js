@@ -7,7 +7,7 @@ function manageData() {
 	document.getElementById('msg').innerHTML = "";
 	// Инициализируем переменную "name", в которую помещаем то, что пользователь вводит в инпут.
 	let name = document.getElementById('name').value;
-	// Если в инпуте ничего нет, то в msg выводим просьбу о заполнении поля ввода
+	// // Если в инпуте ничего нет, то в msg выводим просьбу о заполнении поля ввода
 	if (name == '') {
 		document.getElementById('msg').innerHTML = 'Please enter your name';
 	}
